@@ -32,8 +32,8 @@ body.light {
 
 .theme-toggle {
   display: flex;
-  position: relative;
-  margin: 0 0 0 350px;
+  position: absolute;
+  right: 70px;
   cursor: pointer;
   font-size: 1.5rem;
   transition: transform 0.4s ease;
@@ -53,7 +53,7 @@ body.light {
   justify-content: space-between;
   align-items: center;
   background-color: var(--dark-blue);
-  padding: 1.25rem 2rem;
+  padding: 1.7rem 2rem;
   color: white;
   position: relative;
   z-index: 10000000;
@@ -148,22 +148,24 @@ body.light .navbar {
   list-style: none;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 .mobile-menu li {
   margin: 1rem 0;
 }
 
-.mobile-menu a{
-  color: #fff;
+.mobile-menu ul li a {
   font-weight: bold;
+  display: block;
+  text-decoration: none;
 }
 
-.mobile-menu a:hover {
+.mobile-menu a:hover:not(.location) {
   color: var(--orange);
 }
 
-.posisi {
+.location {
   color: var(--orange);
 }
 
@@ -176,7 +178,7 @@ body.light .mobile-menu a:hover {
   color: var(--dark-blue);
 }
 
-body.light .posisi {
+body.light .location {
   color: var(--dark-blue);
 }
 
@@ -258,7 +260,6 @@ body.light .posisi {
 .slider-dot {
   width: 6px;
   height: 6px;
-  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -296,27 +297,17 @@ body.light .slider-dot.active {
 
 .card {
   background-color: var(--dark-blue);
-  padding: 1rem;
+  padding: 0;
   border-radius: 15px;
   text-align: center;
   transition: transform 0.3s, filter 0.3s;
   color: #000;
   font-size: 0.8rem;
   cursor: pointer;
-  width: 100px;
-  height: 120px;
-}
-
-.card {
-  position: relative;
-  overflow: hidden;
-  background-color: var(--dark-blue);
-  padding: 0;
-  border-radius: 15px;
-  cursor: pointer;
   width: 130px;
   height: 170px;
-  transition: transform 0.3s, filter 0.3s;
+  position: relative;
+  overflow: hidden;
 }
 
 .card img {
@@ -404,4 +395,5 @@ body.light .footer {
 /* Menghilangkan garis bawah dan warna untuk href atau link */
 a{
   text-decoration: none;
+  color: var(--text-light);
 }

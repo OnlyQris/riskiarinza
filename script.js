@@ -27,6 +27,10 @@ themeToggle.addEventListener("click", () => {
 });
 
 // Set theme on page load
+function updateThemeIcon() {
+  themeToggle.innerHTML = document.body.classList.contains("light") ? "☀️" : "🌙";
+}
+
 window.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("theme");
   if (savedTheme === "light") {
@@ -48,6 +52,7 @@ hamburger.addEventListener("click", () => {
 // Slider Functions
 function showSlide(index) {
   slider.style.transform = `translateX(-${index * 100}%)`;
+  updateDots();
 }
 
 function nextSlide() {
@@ -86,9 +91,4 @@ function updateDots() {
   dots.forEach((dot, i) => {
     dot.classList.toggle("active", i === currentSlide);
   });
-}
-
-function showSlide(index) {
-  slider.style.transform = `translateX(-${index * 100}%)`;
-  updateDots();
 }
