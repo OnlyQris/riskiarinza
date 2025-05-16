@@ -31,6 +31,8 @@ function updateThemeIcon() {
   themeToggle.innerHTML = document.body.classList.contains("light") ? "☀️" : "🌙";
 }
 
+localStorage.setItem("theme", document.body.classList.contains("light") ? "light" : "dark");
+
 window.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("theme");
   if (savedTheme === "light") {
