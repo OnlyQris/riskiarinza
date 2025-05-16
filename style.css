@@ -311,7 +311,7 @@ body.light .slider-dot.active {
 }
 
 .card img {
-  width: 1230px;
+  width: 130px;
   height: 170px;
   object-fit: cover;
   filter: brightness(0.5);
