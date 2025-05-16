@@ -8,12 +8,12 @@
   --text-dark: #000;
 }
 
-html, body {
+body {
   overflow-x: hidden;
 }
 
 img {
-  objetc-fit: cover;
+  object-fit: cover;
 }
 
 body {
@@ -87,6 +87,7 @@ body.light .navbar {
   font-family: Pacifico;
   position: relative;
   margin: 0;
+  color: var(--text-light);
 }
 
 /* Hamburger default */
