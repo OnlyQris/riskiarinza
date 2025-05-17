@@ -157,8 +157,8 @@ body.light .navbar {
   text-decoration: none;
 }
 
-.mobile-menu a:hover:not(.location) {
-  color: var(--orange);
+.mobile-menu a:hover {
+  color: var(--gray-dark);
 }
 
 .location {
@@ -171,7 +171,7 @@ body.light .mobile-menu {
 }
 
 body.light .mobile-menu a:hover {
-  color: var(--dark-blue);
+  color: var(--gray-dark);
 }
 
 body.light .location {
@@ -343,7 +343,7 @@ body.light .slider-dot.active {
 }
 
 .card-app h3 {
-  font-size: 0.3rem;
+  font-size: 0.4rem;
   color: var(--orange);
   margin: 4px 0 0 150px;
   filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
