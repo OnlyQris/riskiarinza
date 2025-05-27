@@ -1,75 +1,66 @@
 :root {
-  --dark-bg: #1e1e1e;
-  --light-bg: #f4f4f4;
-  --dark-blue: #0056b3;
-  --orange: #ff9800;
-  --gray-dark: #333;
-  --text-light: #fff;
-  --text-dark: #000;
+  --bg: #f7f7f7;
+  --color: #ff9900;
+  --color-hover: #0056b3;
+  --text-color: #000;
+  --text-logo: #fff;
+  --primary-color: #3a435d;
+  --accent-color: #0071ff;
+}
+
+.darkmode {
+  --bg: #1e1e1e;
+  --color: #0056b3;
+  --color-hover: #ff9900;
+  --text-color: #fff;
+  --primary-color: #3a435d;
+  --accent-color: #0071ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 html, body {
   overflow-x: hidden;
 }
 
-img {
-  object-fit: cover;
+/* Menghilangkan garis bawah dan warna untuk href atau link */
+a{
+  text-decoration: none;
+  color: var(--text-logo);
 }
+/* End Menghilangkan garis bawah dan warna untuk href atau link */
 
 body {
-  margin: 0;
+  padding-left: 300px;
+  padding-right: 300px;
   font-family: Exo, sans-serif;
-  background-color: var(--dark-bg);
-  color: var(--text-light);
+  background-color: var(--bg);
+  color: var(--text-color);
   transition: background 0.3s, color 0.3s;
 }
 
-body.light {
-  background-color: var(--light-bg);
-  color: var(--text-dark);
-  overflow-x: hidden;
-}
-
-.theme-toggle {
-  display: flex;
-  position: absolute;
-  right: 70px;
-  cursor: pointer;
-  font-size: 1.5rem;
-  transition: transform 0.4s ease;
-  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.6));
-}
-
-.theme-toggle.animate {
-  transform: rotate(360deg);
-}
-
-.toggle-theme{
-  background-color: var(--text-light);
-}
-
 .navbar {
+  margin: 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: var(--dark-blue);
-  padding: 1.7rem 2rem;
-  color: white;
-  position: relative;
-  z-index: 10000000;
+  justify-content: end;
+  background-color: var(--color);
+  padding: 1.7rem;
+  top: 0;
+  left: 0px;
+  width: 96%;
+  height: 20px;
+  z-index: 999;
 }
 
-body.light .navbar {
-  background-color: var(--orange);
-  color: var(--text-light);
-}
-
-/* Logo di pojok kiri atas */
+/* Logo */
 .logo {
     display: flex;
-    position: absolute;
     top: 10px;
-    left: 18px; /* Menempatkan logo di kiri atas */
+    right: 18px; /* Menempatkan logo di kiri atas */
     z-index: 10000;
     gap: 10px;
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
@@ -86,13 +77,45 @@ body.light .navbar {
   font-weight: bold;
   font-family: Pacifico;
   position: relative;
-  margin: 0;
-  color: var(--text-light);
+  margin: 3px 0 0 0;
+  color: var(--text-logo);
+}
+/* End Logo */
+
+/* Tema Mode */
+button{
+  border: none;
+  padding: .8em 2em;
+  border-radius: 100%;
+  font: inherit;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
 }
 
-/* Hamburger default */
+#theme-switch{
+  height: 50px;
+  width: 50px;
+  padding: 0;
+}
+
+#theme-switch svg:last-child{
+  display: none;
+}
+
+.darkmode #theme-switch svg:first-child{
+  display: none;
+}
+
+.darkmode #theme-switch svg:last-child{
+  display: block;
+}
+/* End Tema Mode */
+
+/* Menu Hamburger */
 .hamburger {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: space-between;
   width: 24px;
@@ -121,14 +144,15 @@ body.light .navbar {
 .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
+/* End Animasi saat aktif */
+/* End Menu Hamburger */
 
 /* Mobile Menu - sembunyi default */
 .mobile-menu {
-  position: absolute;
-  top: 72px;
-  right: 0px;
-  background-color: var(--dark-blue);
-  width: 40%;
+  position: relative;
+  top: 157px;
+  background-color: var(--color);
+  width: 35%;
   height: 210px;
   padding: 1rem;
   flex-direction: column;
@@ -142,6 +166,7 @@ body.light .navbar {
 .mobile-menu.active {
   transform: translateX(0%);
   opacity: 1;
+  z-index: 9999;
 }
 
 .mobile-menu ul {
@@ -161,40 +186,18 @@ body.light .navbar {
   text-decoration: none;
 }
 
-.mobile-menu a:hover:not(.location) {
-  color: var(--orange);
+.mobile-menu a:hover {
+  color: var(--color-hover);
 }
 
 .location {
-  color: var(--orange);
+  color: var(--color-hover);
 }
-
-body.light .mobile-menu {
-  background-color: var(--orange);
-  color: var(--text-light);
-}
-
-body.light .mobile-menu a:hover {
-  color: var(--dark-blue);
-}
-
-body.light .location {
-  color: var(--dark-blue);
-}
-
-/* Theme Toggle */
-.theme-toggle {
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.theme-toggle.animate {
-  transform: rotate(360deg);
-}
+/* End Mobile Menu - sembunyi default */
 
 /* Slider */
 .slider {
+  padding: 80px 0 0 0;
   margin: 1rem;
 }
 
@@ -246,7 +249,7 @@ body.light .location {
   right: 10px;
 }
 
-/* Dots menyatu di dalam slider */
+/* Dots indicator slider */
 .slider-dots {
   position: absolute;
   bottom: 10px; /* Jarak dari bawah gambar */
@@ -263,22 +266,15 @@ body.light .location {
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  background-color: var(--dark-bg);
+  background-color: var(--bg);
 }
 
 .slider-dot.active {
-  background-color: var(--dark-blue);
+  background-color: var(--color);
   transform: scale(1.2);
 }
-
-body.light .slider-dot {
-  background-color: var(--text-light);
-}
-
-body.light .slider-dot.active {
-  background-color: var(--orange);
-  transform: scale(1.2);
-}
+/* End Dots indicator slider */
+/* End Slider */
 
 .section-title {
   text-align: center;
@@ -296,7 +292,7 @@ body.light .slider-dot.active {
 }
 
 .card {
-  background-color: var(--dark-blue);
+  background-color: var(--color);
   padding: 0;
   border-radius: 15px;
   text-align: center;
@@ -352,48 +348,248 @@ body.light .slider-dot.active {
   opacity: 1;
 }
 
-.card .terang img {
-  opacity: 0;
+.terang img {
+  display: block;
 }
 
-.card .gelap img {
-  opacity: 1;
-}
-
-body.light .card .gelap img {
-  opacity: 0;
+.gelap img {
   display: none;
 }
 
-body.light .card .terang img {
+.darkmode .terang img {
+  display: none;
+}
+
+.darkmode .gelap img {
+  display: block;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 4rem;
+  padding: 1rem;
+  justify-items: center;
+}
+
+.card-app {
+  flex-direction: column;
+  background-color: var(--color);
+  padding-left: 90px;
+  padding-right: 90px;
+  margin: 0;
+  border-radius: 15px;
+  transition: transform 0.3s, filter 0.3s;
+  color: #000;
+  cursor: pointer;
+  width: 60%;
+  height: 140px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-app img {
+  position: absolute;
+  width: 22%;
+  height: auto;
+  left: 6%;
+  top: 9%;
+  filter: brightness(1);
+  transition: filter 0.3s ease;
+  border-radius: 7px;
+  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
+}
+
+/* Tulisan posisi awal di bawah tengah */
+.card-app p {
+  position: relative;
+  bottom: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-weight: bold;
+  color: white;
+  font-size: 0.7rem;
+  text-align: center;
+  z-index: 2;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+/* Hover effect */
+.card-app:hover {
+  transform: scale(1.05);
+}
+
+.card-app:hover img {
+  filter: blur(3px) brightness(0.7);
+}
+
+.card-app h1 {
+  font-size: 1.2em;
+  color: var(--text-color);
+  margin: 37px 0 0 45px;
+  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
+  font-weight: bold;
+}
+
+.card-app h3 {
+  font-size: 0.5rem;
+  color: var(--text-color);
+  margin: 5px 0 0 40px;
+  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
+  float: left;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.card-app h4 {
+  font-size: 0.4rem;
+  color: var(--text-color);
+  margin: 4px 0 0 45px;
+  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
+  float: left;
+}
+
+.card-app:hover h1 {
+  display: none;
+}
+
+.card-app:hover h3 {
+  display: none;
+}
+
+.card-app:hover h4 {
+  display: none;
+}
+
+/* Tulisan pindah ke tengah tengah dan membesar */
+.card-app:hover p {
+  top: 50%;
+  bottom: auto;
+  transform: translate(-50%, -50%) scale(1.2);
+  font-size: 1rem;
   opacity: 1;
 }
 
-body.light .card p {
-  color: #fff;
+.gambar-grib {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 15px;
+  justify-content: center;
 }
 
-body.light .card {
-  background-color: var(--orange);
-  color: var(--text-light);
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 4rem;
+  padding: 3rem;
+  justify-items: center;
 }
 
+.card-music {
+  background-color: var(--color);
+  padding: 0;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s, filter 0.3s;
+  color: #000;
+  font-size: 0.8rem;
+  cursor: pointer;
+  width: 240px;
+  height: 370px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-music img {
+  width: 180px;
+  height: auto;
+  object-fit: cover;
+  filter: brightness(1);
+  transition: filter 0.3s ease;
+}
+
+/* Tulisan posisi awal di bawah tengah */
+.card-music p {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-weight: bold;
+  color: white;
+  font-size: 0.7rem;
+  text-align: center;
+  z-index: 2;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+/* Hover effect */
+.card-music:hover {
+  transform: scale(1.05);
+}
+
+.card-music:hover img {
+  filter: blur(3px) brightness(0.7);
+}
+
+/* Tulisan pindah ke tengah tengah dan membesar */
+.card-music:hover p {
+  top: 50%;
+  bottom: auto;               /* hapus bottom */
+  transform: translate(-50%, -50%) scale(1.2);
+  font-size: 0.9rem;
+  opacity: 1;
+}
+
+/* Footer */
 .footer {
   text-align: center;
   padding: 1rem;
-  background-color: var(--dark-blue);
+  background-color: var(--color);
   color: white;
   font-size: 0.9rem;
   margin-top: 2rem;
 }
+/* End Footer */
 
-body.light .footer {
-  background-color: var(--orange);
-  color: var(--text-light);
-}
+/* Responsive */
+@media screen and (max-width: 1100px) {
+  body {
+  padding: 0;
+  }
+  
+  .navbar {
+  left: 0;
+  width: 100%;
+  position: fixed;
+  }
+  
+  .app-grid {
+    gap: 1.5rem;
+  }
+  
+  .card-app {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 95%;
+  }
+  
+  .card-app h1 {
+    display: relative;
+    margin: 37px 0 0 140px;
+  }
 
-/* Menghilangkan garis bawah dan warna untuk href atau link */
-a{
-  text-decoration: none;
-  color: var(--text-light);
+  .card-app h3 {
+    display: relative;
+    margin: 5px 0 0 137px;
+  }
+
+  .card-app h4 {
+    display: relative;
+    margin: 4px 0 0 142px;
+  }
 }
+/* End Responsive */
