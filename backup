@@ -1,0 +1,560 @@
+--- HTML ---
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" href="https://i.postimg.cc/h4QxPpj8/logo-profil.png"/>
+  <title>RiskiArinza | WebSite</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href= "https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
+  
+</head>
+<body class="dark">
+<!-- Navbar -->
+  <header class="navbar">
+  
+    <a href="index.html" class="logo">
+    <img src="https://i.postimg.cc/h4QxPpj8/logo-profil.png" alt="RiskiArinza Logo" class="logo-img">
+    <h1>RiskiArinza</h1>
+    </a>
+    
+    <div class="dropshadow"></div>
+    <div class="theme-toggle" id="themeToggle" title="Toggle Theme">🌙</div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a class="location" href="index.html">Home</a></li>
+        <li><a href="aplikasi.html">Aplikasi</a></li>
+        <li><a href="gambar.html">Gambar</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- Slider -->
+  <section class="slider">
+    <div class="slider-wrapper">
+
+      <div class="slider-container" id="slider">
+        <img src="https://i.postimg.cc/qM92Nygd/Banner-Riski-Arinza-New.jpg" alt="Welcome" />
+        <img src="https://i.postimg.cc/kG7q1jjd/Banner-The-RA-Gaming.png" alt="Aplikasi" />
+        <img src="https://i.postimg.cc/sDD35NQY/New-Benner.jpg" alt="Music" />
+      </div>
+      
+    <!-- Dots Indicator -->
+        <div class="slider-dots" id="sliderDots"></div>
+    
+        <button class="slider-btn next" id="nextSlide">&#10095;</button>
+        <button class="slider-btn prev" id="prevSlide">&#10094;</button>
+        
+    </div>
+  </section>
+
+  <section id="aplikasi" class="section-title">~ Aplikasi Games ~</section>
+  <section class="card-grid">
+    <a href="mlbb.html" class="card">
+    <div class="gelap"><img src="https://i.postimg.cc/RF7hSHtR/mobile-legends-bang-bang.jpg" alt="mobile legends"></div>
+    <div class="terang"><img src="https://i.postimg.cc/ryZRZS86/mobile-legends.jpg" alt="mobile legends"></div>
+    <p>Mobile Legends Bang:Bang</p>
+    </a>
+   
+    <a href="ff.html" class="card">
+    <div class="gelap"><img src="https://i.postimg.cc/vHKcYMjc/free-fire.jpg" alt="free fire"></div>
+    <div class="terang"><img src="https://i.postimg.cc/XvfJk5vC/garena-free-fire.jpg" alt="free fire"></div>
+    <p>Free Fire</p>
+    </a>
+   
+    <a href="pubgm.html" class="card">
+    <div class="gelap"><img src="https://i.postimg.cc/TwsZy7Xq/pubg.jpg" alt="pubg mobile"></div>
+    <div class="terang"><img src="https://i.postimg.cc/05FsrQkR/pubg-mobile.jpg" alt="pubg mobile"></div>
+    <p>PUBG Mobile</p>
+    </a>
+  
+    <a href="codm.html" class="card">
+    <img src="https://i.postimg.cc/B6261Lsk/gambar-kosong.png" alt="gambar kosong">
+    <p>Call Of Duty Mobile</p>
+    </a>
+  
+    <a href="mc.html" class="card">
+    <img src="https://i.postimg.cc/B6261Lsk/gambar-kosong.png" alt="gambar kosong">
+    <p>Minecraft</p>
+    </a>
+   
+    <a href="gtasa.html" class="card">
+    <img src="https://i.postimg.cc/B6261Lsk/gambar-kosong.png" alt="gambar kosong">
+    <p>Grand Theft Auto : SA</p>
+    </a>
+  </section>
+
+  <section id="gambar" class="section-title">~ Kumpulan Gambar ~</section>
+  <section class="card-grid">
+    <a href="gambar.html" class="card">
+    <img src="https://i.postimg.cc/B6261Lsk/gambar-kosong.png" alt="gambar kosong">
+    <p>gambar kosong</p>
+    </a>
+    
+    <a href="gambar.html" class="card">
+    <img src="https://i.postimg.cc/B6261Lsk/gambar-kosong.png" alt="gambar kosong">
+    <p>gambar kosong</p>
+    </a>
+    
+    <a href="gambar.html" class="card">
+    <img src="https://i.postimg.cc/B6261Lsk/gambar-kosong.png" alt="gambar kosong">
+    <p>gambar kosong</p>
+    </a>
+    
+    <a href="gambar.html" class="card">
+    <img src="https://i.postimg.cc/B6261Lsk/gambar-kosong.png" alt="gambar kosong">
+    <p>gambar kosong</p>
+    </a>
+    
+    <a href="gambar.html" class="card">
+    <img src="https://i.postimg.cc/B6261Lsk/gambar-kosong.png" alt="gambar kosong">
+    <p>gambar kosong</p>
+    </a>
+    
+    <a href="gambar.html" class="card">
+    <img src="https://i.postimg.cc/B6261Lsk/gambar-kosong.png" alt="gambar kosong">
+    <p>gambar kosong</p>
+    </a>
+  </section>
+
+  <section id="music" class="section-title">~ Music ~</section>
+  <section class="card-grid">
+    <a href="music.html" class="card">
+    <img src="https://i.postimg.cc/B6261Lsk/gambar-kosong.png" alt="gambar kosong">
+    <p>Music Sample 1</p>
+    </a>
+    
+    <a href="music.html" class="card">
+    <img src="https://i.postimg.cc/B6261Lsk/gambar-kosong.png" alt="gambar kosong">
+    <p>Music Sample 2</p>
+    </a>
+    
+    <a href="music.html"class="card">
+    <img src="https://i.postimg.cc/B6261Lsk/gambar-kosong.png" alt="gambar kosong">
+    <p>Music Sample 3</p>
+    </a>
+  </section>
+
+<footer class="footer">
+  ©RiskiArinza - 2025
+</footer>
+</body>
+</html>
+
+--- CSS ---
+
+:root {
+  --dark-bg: #1e1e1e;
+  --light-bg: #f4f4f4;
+  --dark-blue: #0056b3;
+  --orange: #ff9800;
+  --gray-dark: #333;
+  --text-light: #fff;
+  --text-dark: #000;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+img {
+  object-fit: cover;
+}
+
+body {
+  margin: 0;
+  font-family: Exo, sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+  transition: background 0.3s, color 0.3s;
+}
+
+body.light {
+  background-color: var(--light-bg);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+.theme-toggle {
+  display: flex;
+  position: absolute;
+  right: 70px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: transform 0.4s ease;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.6));
+}
+
+.theme-toggle.animate {
+  transform: rotate(360deg);
+}
+
+.toggle-theme{
+  background-color: var(--text-light);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark-blue);
+  padding: 1.7rem 2rem;
+  color: white;
+  position: relative;
+  z-index: 10000000;
+}
+
+body.light .navbar {
+  background-color: var(--orange);
+  color: var(--text-light);
+}
+
+/* Logo di pojok kiri atas */
+.logo {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 18px; /* Menempatkan logo di kiri atas */
+    z-index: 10000;
+    gap: 10px;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+.logo-img {
+    width: 50px; /* Ukuran logo, sesuaikan dengan ukuran logo Anda */
+    height: 50px;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+.logo h1{
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: Pacifico;
+  position: relative;
+  margin: 0;
+  color: var(--text-light);
+}
+
+/* Hamburger default */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+}
+
+/* Animasi saat aktif */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile Menu - sembunyi default */
+.mobile-menu {
+  position: absolute;
+  top: 72px;
+  right: 0px;
+  background-color: var(--dark-blue);
+  width: 40%;
+  height: 210px;
+  padding: 1rem;
+  flex-direction: column;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  transform: translateX(100%);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.mobile-menu.active {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.mobile-menu li {
+  margin: 1rem 0;
+}
+
+.mobile-menu ul li a {
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+}
+
+.mobile-menu a:hover:not(.location) {
+  color: var(--orange);
+}
+
+.location {
+  color: var(--orange);
+}
+
+body.light .mobile-menu {
+  background-color: var(--orange);
+  color: var(--text-light);
+}
+
+body.light .mobile-menu a:hover {
+  color: var(--dark-blue);
+}
+
+body.light .location {
+  color: var(--dark-blue);
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle.animate {
+  transform: rotate(360deg);
+}
+
+/* Slider */
+.slider {
+  margin: 1rem;
+}
+
+.slider-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  height: 200px;
+  width: 100%;
+}
+
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 100%;
+}
+
+.slider-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 30%;
+  transition: background-color 0.3s ease;
+}
+
+.slider-btn:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.slider-btn.prev {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
+}
+
+/* Dots menyatu di dalam slider */
+.slider-dots {
+  position: absolute;
+  bottom: 10px; /* Jarak dari bawah gambar */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+}
+
+.slider-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: var(--dark-bg);
+}
+
+.slider-dot.active {
+  background-color: var(--dark-blue);
+  transform: scale(1.2);
+}
+
+body.light .slider-dot {
+  background-color: var(--text-light);
+}
+
+body.light .slider-dot.active {
+  background-color: var(--orange);
+  transform: scale(1.2);
+}
+
+.section-title {
+  text-align: center;
+  margin: 2rem 0 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  justify-items: center;
+}
+
+.card {
+  background-color: var(--dark-blue);
+  padding: 0;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s, filter 0.3s;
+  color: #000;
+  font-size: 0.8rem;
+  cursor: pointer;
+  width: 130px;
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card img {
+  width: 130px;
+  height: 170px;
+  object-fit: cover;
+  filter: brightness(1);
+  transition: filter 0.3s ease;
+}
+
+/* Tulisan posisi awal di bawah tengah */
+.card p {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-weight: bold;
+  color: white;
+  font-size: 0.7rem;
+  text-align: center;
+  z-index: 2;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card:hover img {
+  filter: blur(3px) brightness(0.7);
+}
+
+/* Tulisan pindah ke tengah tengah dan membesar */
+.card:hover p {
+  top: 50%;
+  bottom: auto;               /* hapus bottom */
+  transform: translate(-50%, -50%) scale(1.2);
+  font-size: 0.9rem;
+  opacity: 1;
+}
+
+.card .terang img {
+  opacity: 0;
+}
+
+.card .gelap img {
+  opacity: 1;
+}
+
+body.light .card .gelap img {
+  opacity: 0;
+  display: none;
+}
+
+body.light .card .terang img {
+  opacity: 1;
+}
+
+body.light .card p {
+  color: #fff;
+}
+
+body.light .card {
+  background-color: var(--orange);
+  color: var(--text-light);
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--dark-blue);
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+body.light .footer {
+  background-color: var(--orange);
+  color: var(--text-light);
+}
+
+/* Menghilangkan garis bawah dan warna untuk href atau link */
+a{
+  text-decoration: none;
+  color: var(--text-light);
+}
