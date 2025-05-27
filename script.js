@@ -77,4 +77,54 @@ function updateDots() {
     dot.classList.toggle("active", i === currentSlide)
   })
 }
+
+// Swep pakai jari
+let startX = 0
+let isDragging = false
+
+slider.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX
+  isDragging = true
+})
+
+slider.addEventListener("touchmove", (e) => {
+  if (!isDragging) return
+  const currentX = e.touches[0].clientX
+  const diff = startX - currentX
+
+  if (Math.abs(diff) > 50) {
+    if (diff > 0) nextSlide()      // geser ke kiri
+    else prevSlideFunc()           // geser ke kanan
+    isDragging = false
+  }
+})
+
+slider.addEventListener("touchend", () => {
+  isDragging = false
+})
+
+// Mouse drag (opsional untuk desktop)
+slider.addEventListener("mousedown", (e) => {
+  startX = e.clientX
+  isDragging = true
+})
+
+slider.addEventListener("mousemove", (e) => {
+  if (!isDragging) return
+  const currentX = e.clientX
+  const diff = startX - currentX
+
+  if (Math.abs(diff) > 50) {
+    if (diff > 0) nextSlide()
+    else prevSlideFunc()
+    isDragging = false
+  }
+})
+
+slider.addEventListener("mouseup", () => {
+  isDragging = false
+})
+slider.addEventListener("mouseleave", () => {
+  isDragging = false
+})
 // End Slider Functions
