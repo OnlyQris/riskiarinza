@@ -427,7 +427,7 @@ button{
 
 .card-app h1 {
   font-size: 1.2em;
-  color: var(--text-color);
+  color: var(--text-logo);
   margin: 37px 0 0 45px;
   filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
   font-weight: bold;
@@ -435,7 +435,7 @@ button{
 
 .card-app h3 {
   font-size: 0.5rem;
-  color: var(--text-color);
+  color: var(--text-logo);
   margin: 5px 0 0 40px;
   filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
   float: left;
@@ -445,7 +445,7 @@ button{
 
 .card-app h4 {
   font-size: 0.4rem;
-  color: var(--text-color);
+  color: var(--text-logo);
   margin: 4px 0 0 45px;
   filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
   float: left;
@@ -542,6 +542,65 @@ button{
   transform: translate(-50%, -50%) scale(1.2);
   font-size: 0.9rem;
   opacity: 1;
+}
+
+/* Card Aplikasi */
+.card-mlbb {
+  text-align: center;
+  background-color: var(--color);
+  color: white;
+  font-size: 0.9rem;
+  border-radius: 15px;
+  height: 1000px;
+  width: auto;
+}
+
+.card-mlbb img {
+  position: relative;
+  margin: 0;
+  width: 22%;
+  height: auto;
+  left: 6%;
+  top: 40px;
+  filter: brightness(1);
+  transition: filter 0.3s ease;
+  border-radius: 7px;
+  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
+}
+
+/* Tulisan posisi awal di bawah tengah */
+.card-mlbb h1 {
+  position: relative;
+  font-size: 1.6em;
+  color: var(--text-logo);
+  margin: 0;
+  padding: 0;
+  bottom: 60px;
+  left: 50px;
+  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
+  font-weight: bold;
+}
+
+.card-mlbb h3 {
+  position: relative;
+  font-size: 0.5rem;
+  color: var(--text-logo);
+  margin: 0;
+  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
+  float: left;
+  padding-right: 10px;
+  padding-left: 150px;
+}
+
+.card-mlbb h4 {
+  position: relative;
+  font-size: 0.7rem;
+  color: var(--text-logo);
+  margin: 0;
+  bottom: 55px;
+  left: 164px;
+  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
+  float: left;
 }
 
 /* Footer */
