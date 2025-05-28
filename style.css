@@ -389,20 +389,22 @@ button{
 }
 
 .card-app img {
-  position: absolute;
-  width: 22%;
-  height: auto;
-  left: 6%;
-  top: 9%;
+  position: relative;
+  height: 120px;
+  width: auto;
+  margin: 0;
+  top: 10px;
+  left: -70px;
   filter: brightness(1);
   transition: filter 0.3s ease;
   border-radius: 7px;
   filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
+  float: left;
 }
 
 /* Tulisan posisi awal di bawah tengah */
 .card-app p {
-  position: relative;
+  position: absolute;
   bottom: 65px;
   left: 50%;
   transform: translateX(-50%);
@@ -411,7 +413,7 @@ button{
   color: white;
   font-size: 0.7rem;
   text-align: center;
-  z-index: 2;
+  z-index: 999;
   transition: all 0.3s ease;
   opacity: 0;
 }
@@ -426,29 +428,35 @@ button{
 }
 
 .card-app h1 {
+  position: relative;
   font-size: 1.2em;
   color: var(--text-logo);
-  margin: 37px 0 0 45px;
+  margin: 0;
+  left: 40px;
+  top: 40px;
   filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
   font-weight: bold;
 }
 
 .card-app h3 {
+  position: relative;
   font-size: 0.5rem;
   color: var(--text-logo);
-  margin: 5px 0 0 40px;
+  margin: 0;
+  left: 40px;
+  top: 45px;
   filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
-  float: left;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-right: 50px;
 }
 
 .card-app h4 {
+  position: relative;
   font-size: 0.4rem;
   color: var(--text-logo);
-  margin: 4px 0 0 45px;
+  margin: 0;
+  left: 45px;
+  top: 40px;
   filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
-  float: left;
 }
 
 .card-app:hover h1 {
@@ -470,6 +478,7 @@ button{
   transform: translate(-50%, -50%) scale(1.2);
   font-size: 1rem;
   opacity: 1;
+  z-index: 9999;
 }
 
 .gambar-grib {
@@ -545,22 +554,29 @@ button{
 }
 
 /* Card Aplikasi */
-.card-mlbb {
+
+.app-tab {
+  display: grid;
+  padding: 1rem;
+  justify-items: center;
+}
+
+.card-tab {
   text-align: center;
   background-color: var(--color);
   color: white;
   font-size: 0.9rem;
   border-radius: 15px;
-  height: 1000px;
+  height: 2000px;
   width: auto;
 }
 
-.card-mlbb img {
+.card-tab img {
   position: relative;
   margin: 0;
   width: 22%;
   height: auto;
-  left: 6%;
+  left: 39%;
   top: 40px;
   filter: brightness(1);
   transition: filter 0.3s ease;
@@ -569,38 +585,38 @@ button{
 }
 
 /* Tulisan posisi awal di bawah tengah */
-.card-mlbb h1 {
+.card-tab h1 {
   position: relative;
-  font-size: 1.6em;
+  font-size: 3.5em;
   color: var(--text-logo);
   margin: 0;
   padding: 0;
-  bottom: 60px;
-  left: 50px;
+  top: 60px;
   filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
   font-weight: bold;
+  float: bottom;
 }
 
-.card-mlbb h3 {
+.card-tab h3 {
   position: relative;
-  font-size: 0.5rem;
+  font-size: 1.3rem;
   color: var(--text-logo);
   margin: 0;
   filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
-  float: left;
-  padding-right: 10px;
-  padding-left: 150px;
+  float: bottom;
+  top: 80px;
+  padding: 0 50px 0 50px;
+  text-align: left;
 }
 
-.card-mlbb h4 {
+.card-tab h4 {
   position: relative;
-  font-size: 0.7rem;
+  font-size: 2rem;
   color: var(--text-logo);
   margin: 0;
-  bottom: 55px;
-  left: 164px;
+  top: 65px;
   filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
-  float: left;
+  float: bottom;
 }
 
 /* Footer */
@@ -636,19 +652,28 @@ button{
     width: 95%;
   }
   
-  .card-app h1 {
-    display: relative;
-    margin: 37px 0 0 140px;
+  .card-app img {
+    left: 15px;
   }
-
-  .card-app h3 {
-    display: relative;
-    margin: 5px 0 0 137px;
+  
+  .card-tab img {
+    top: 20px;
   }
-
-  .card-app h4 {
-    display: relative;
-    margin: 4px 0 0 142px;
+  
+  .card-tab h1 {
+    font-size: 1.6em;
+    top: 40px;
+  }
+  
+  .card-tab h3 {
+   top: 50px; 
+   padding: 0 20px 0 20px;
+   font-size: 0.7rem;
+  }
+  
+  .card-tab h4 {
+    top: 45px;
+    font-size: 0.7rem;
   }
 }
 /* End Responsive */
