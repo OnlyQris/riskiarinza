@@ -59,10 +59,8 @@ body {
 /* Logo */
 .logo {
     display: flex;
-    top: 10px;
-    right: 18px; /* Menempatkan logo di kiri atas */
     z-index: 10000;
-    gap: 10px;
+    gap: 6px;
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
 }
 
@@ -76,7 +74,6 @@ body {
   font-size: 1.8rem;
   font-weight: bold;
   font-family: Pacifico;
-  position: relative;
   margin: 3px 0 0 0;
   color: var(--text-logo);
 }
@@ -85,7 +82,6 @@ body {
 /* Tema Mode */
 button{
   border: none;
-  padding: .8em 2em;
   border-radius: 100%;
   font: inherit;
   text-transform: uppercase;
@@ -94,6 +90,8 @@ button{
 }
 
 #theme-switch{
+  position: relative;
+  left: 29%;
   height: 50px;
   width: 50px;
   padding: 0;
@@ -120,7 +118,7 @@ button{
   justify-content: space-between;
   width: 24px;
   height: 18px;
-  cursor: pointer;
+  left: 30%;
   z-index: 1001;
 }
 
@@ -197,7 +195,7 @@ button{
 
 /* Slider */
 .slider {
-  padding: 80px 0 0 0;
+  padding: 30px 0 0 0;
   margin: 1rem;
 }
 
@@ -567,7 +565,12 @@ button{
   color: white;
   font-size: 0.9rem;
   border-radius: 15px;
-  height: 2000px;
+  height: 3000px;
+  width: auto;
+}
+
+#ff {
+  height: 1000px;
   width: auto;
 }
 
@@ -602,11 +605,15 @@ button{
   font-size: 1.3rem;
   color: var(--text-logo);
   margin: 0;
-  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.4));
   float: bottom;
   top: 80px;
   padding: 0 50px 0 50px;
   text-align: left;
+}
+
+.space {
+  opacity: 0;
 }
 
 .card-tab h4 {
@@ -640,6 +647,10 @@ button{
   left: 0;
   width: 100%;
   position: fixed;
+  }
+  
+  .slider {
+    padding: 80px 0 0 0;
   }
   
   .app-grid {
