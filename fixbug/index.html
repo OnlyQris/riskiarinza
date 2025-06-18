@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://i.postimg.cc/h4QxPpj8/logo-profil.png"/>
+    <link rel="shortcut icon" href="logo.png"/>
     <title>RiskiArinza | OnlyQris</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-      <!-- Link Google Font -->
+  <!-- Link Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-  <!-- End Font -->
+  <!-- End Link Google Font -->
 </head>
 
 <body>
@@ -27,16 +27,40 @@
         <img src="moon.png"/>
       </button>
       <!-- End Tema Mode -->
+      <!-- Menu Hamberger --> 
+      <input type="checkbox" id="check">
+      <label for="check" class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <!-- End Menu Hamberger --> 
       <!-- Navbar Dekstop -->
       <nav class="navbar">
-        <a class="active" href="index.html">Home</a>
+        <a class="lokasi" href="index.html">Home</a>
         <a href="apps.html">Aplikasi</a>
         <a href="picture.html">Gambar</a>
         <a href="about">Tentang</a>
       </nav>
       <!-- End Navbar Dekstop -->
     </header>
-
+    
+    <!-- Slider -->
+    <section class="slider">
+      <div class="slider-wrapper">
+        <div class="slider-container" id="slider">
+          <img src="https://i.postimg.cc/qM92Nygd/Banner-Riski-Arinza-New.jpg" alt="Welcome" />
+          <img src="https://i.postimg.cc/kG7q1jjd/Banner-The-RA-Gaming.png" alt="Aplikasi" />
+          <img src="https://i.postimg.cc/sDD35NQY/New-Benner.jpg" alt="Music" />
+        </div>
+    <!-- Dots Indicator Slider -->
+      <div class="slider-dots" id="sliderDots"></div>
+      <button class="slider-btn next" id="nextSlide">&#10095;</button>
+      <button class="slider-btn prev" id="prevSlide">&#10094;</button>
+    <!-- Dots Indicator Slider -->
+    </div>
+  </section>
+  <!-- End Slider -->
 </body>
 
 </html>

@@ -17,15 +17,18 @@
   --primary-color: #3a435d;
   --accent-color: #0071ff;
 }
+/*End Color Mode*/
 
 /*Disable Link Varian*/
 a{
   text-decoration: none;
   color: var(--text-logo);
 }
+/*End Disable Link Varian*/
 
 /*Font*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+/*End Font*/
 
 /*Halaman*/
 * {
@@ -39,6 +42,11 @@ body {
   min-height: 100vh;
   background: var(--bg);
 }
+/*End Halaman*/
+
+#check {
+  display: none;
+}
 
 /*Header Navbar*/
 .header {
@@ -46,7 +54,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem 5%;
+  padding: 1rem 10%;
   background: var(--color);
   display: flex;
   justify-content: space-between;
@@ -54,6 +62,7 @@ body {
   z-index: 100;
   filter: drop-shadow(0 1px 5px rgba(0, 0, 0, 0.5));
 }
+/*Header Navbar*/
 
 /*Logo Text*/
 .logo {
@@ -70,8 +79,33 @@ body {
   width: 40px;
   height: 40px;
 }
+/*End Logo Text*/
 
-/* Tema Mode */
+/*Navbar*/
+.navbar {
+  position: absolute;
+  right: 16%;
+}
+
+.navbar a {
+  font-size: 1.15rem;
+  font-weight: bold;
+  margin-left: 2.5rem;
+  padding: 20px 5px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.navbar a:hover {
+  color: var(--color-hover);
+}
+
+.lokasi {
+  color: var(--color-hover);
+  filter: drop-shadow(0 2px 7px rgba(0, 0, 0, 0.5));
+}
+/*End Navbar*/
+
+/*Tema Mode*/
 button{
   border: none;
   border-radius: 50%;
@@ -89,8 +123,8 @@ button img{
 }
 
 #theme-switch{
-  position: relative;
-  left: 35px;
+  position: absolute;
+  right: 10%;
   height: 45px;
   width: 45px;
   background-color: rgba(0, 0, 0, 0.1);
@@ -107,24 +141,167 @@ button img{
 .darkmode #theme-switch img:last-child{
   display: block;
 }
-/* End Tema Mode */
+/*End Tema Mode*/
 
-/*Navbar*/
-.navbar a {
-  font-size: 1.15rem;
-  font-weight: bold;
-  margin-left: 2.5rem;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+/* Menu Hamburger */
+#hamburger {
+  opacity: 0;
+  position: absolute;
+  right: 18%;
 }
 
-.navbar a:hover {
-  color: var(--color-hover);
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
 }
 
-.active {
-  padding: 5px 13px;
-  border-radius: 10px;
-  background-color: var(--color-hover);
-  color: var(--text-logo);
+.hamburger span {
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+}
+
+/* Animasi saat aktif */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+/* End Animasi saat aktif */
+/* End Menu Hamburger */
+
+/* Slider */
+.slider {
+  padding: 30px 0;
+  margin: 5rem 15%;
+}
+
+.slider-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  height: 350px;
+  width: 100%;
+}
+
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 100%;
+}
+
+.slider-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Dots indicator slider */
+.slider-dots {
+  position: absolute;
+  bottom: 10px; /* Jarak dari bawah gambar */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+}
+
+.slider-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: var(--bg);
+}
+
+.slider-dot.active {
+  background-color: var(--color);
+  transform: scale(1.2);
+}
+/* End Dots indicator slider */
+/* End Slider */
+
+/*Responsive*/
+@media (max-width: 1150px) {
+  .header {
+    padding: 1rem 5%;
+  }
+  
+  .navbar {
+    right: 14%;
+  }
+  
+  #theme-switch {
+    right: 5%;
+  }
+  
+  .slider {
+  margin: 6rem 10%;
+  }
+
+  .slider-wrapper {
+  height: 300px;
+  }
+}
+
+@media (max-width: 770px) {
+  #hamburger {
+    opacity: 1;
+  }
+  
+  .navbar{
+    right: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: var(--color-hover);
+    backdrop-filter: blur(50px);
+    overflow: hidden;
+    transition: .3s ease;
+  }
+  
+  #check:checked~.navbar{
+    height: 16.7rem;
+  }
+  
+  .navbar a {
+    display: block;
+    font-size: 1rem;
+    padding: 1.5rem 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .navbar a:hover {
+    color: var(--color);
+  }
+  
+  .lokasi {
+  color: var(--color);
   filter: drop-shadow(0 2px 7px rgba(0, 0, 0, 0.5));
+  }
+
+  .slider {
+  margin: 5rem 7%;
+  }
+
+  .slider-wrapper {
+  height: 180px;
+  }
 }
