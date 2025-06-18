@@ -7,6 +7,7 @@
   --text-logo: #fff;
   --primary-color: #3a435d;
   --accent-color: #0071ff;
+  --drop-shadow: rgba(0, 0, 0, 0.5)
 }
 
 .darkmode {
@@ -16,6 +17,7 @@
   --text-color: #fff;
   --primary-color: #3a435d;
   --accent-color: #0071ff;
+  --drop-shadow: rgba(255, 255, 255, 0.2)
 }
 /*End Color Mode*/
 
@@ -60,7 +62,7 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  filter: drop-shadow(0 1px 5px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 1px 5px var(--drop-shadow));
 }
 /*Header Navbar*/
 
@@ -85,6 +87,7 @@ body {
 .navbar {
   position: absolute;
   right: 16%;
+  filter: drop-shadow(0 2px 4px var(--drop-shadow));
 }
 
 .navbar a {
@@ -193,6 +196,7 @@ button img{
   border-radius: 20px;
   height: 350px;
   width: 100%;
+  filter: drop-shadow(0 2px 4px var(--drop-shadow));
 }
 
 .slider-container {
