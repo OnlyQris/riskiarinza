@@ -1,0 +1,130 @@
+/*Color Mode*/
+:root {
+  --bg: #f7f7f7;
+  --color: #ff9900;
+  --color-hover: #0056b3;
+  --text-color: #000;
+  --text-logo: #fff;
+  --primary-color: #3a435d;
+  --accent-color: #0071ff;
+}
+
+.darkmode {
+  --bg: #1e1e1e;
+  --color: #0056b3;
+  --color-hover: #ff9900;
+  --text-color: #fff;
+  --primary-color: #3a435d;
+  --accent-color: #0071ff;
+}
+
+/*Disable Link Varian*/
+a{
+  text-decoration: none;
+  color: var(--text-logo);
+}
+
+/*Font*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/*Halaman*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+/*Header Navbar*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 5%;
+  background: var(--color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  filter: drop-shadow(0 1px 5px rgba(0, 0, 0, 0.5));
+}
+
+/*Logo Text*/
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: Pacifico;
+  gap: 7px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Tema Mode */
+button{
+  border: none;
+  border-radius: 50%;
+  font: inherit;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+button img{
+  border: none;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+}
+
+#theme-switch{
+  position: relative;
+  left: 35px;
+  height: 45px;
+  width: 45px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#theme-switch img:last-child{
+  display: none;
+}
+
+.darkmode #theme-switch img:first-child{
+  display: none;
+}
+
+.darkmode #theme-switch img:last-child{
+  display: block;
+}
+/* End Tema Mode */
+
+/*Navbar*/
+.navbar a {
+  font-size: 1.15rem;
+  font-weight: bold;
+  margin-left: 2.5rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.navbar a:hover {
+  color: var(--color-hover);
+}
+
+.active {
+  padding: 5px 13px;
+  border-radius: 10px;
+  background-color: var(--color-hover);
+  color: var(--text-logo);
+  filter: drop-shadow(0 2px 7px rgba(0, 0, 0, 0.5));
+}
