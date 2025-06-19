@@ -6,6 +6,7 @@
   --text-color: #000;
   --text-logo: #fff;
   --primary-color: #3a435d;
+  --border: rgb(75, 82, 92)
   --accent-color: #0071ff;
   --drop-shadow: rgba(0, 0, 0, 0.5)
 }
@@ -16,6 +17,7 @@
   --color-hover: #ff9900;
   --text-color: #fff;
   --primary-color: #3a435d;
+  --border: rgb(75, 82, 92)
   --accent-color: #0071ff;
   --drop-shadow: rgba(255, 255, 255, 0.2)
 }
@@ -43,6 +45,7 @@ a{
 body {
   min-height: 100vh;
   background: var(--bg);
+  color: var(--text-logo);
 }
 /*End Halaman*/
 
@@ -239,6 +242,54 @@ button img{
 /* End Dots indicator slider */
 /* End Slider */
 
+/*Card*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  gap: 15px;
+  justify-content: center;
+  padding: 0 10%;
+}
+
+.card {
+  padding: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background-color: var(--color);
+  text-align: center;
+}
+
+.card img {
+  width: 130px;
+  height: 170px;
+  filter: brightness(1);
+  transition: filter 0.3s ease;
+}
+/* Hover effect */
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card:hover img {
+  filter: blur(3px) brightness(0.7);
+}
+
+.terang img {
+  display: block;
+}
+
+.gelap img {
+  display: none;
+}
+
+.darkmode .terang img {
+  display: none;
+}
+
+.darkmode .gelap img {
+  display: block;
+}
+
 /*Responsive*/
 @media (max-width: 1150px) {
   .header {
@@ -260,6 +311,20 @@ button img{
   .slider-wrapper {
   height: 300px;
   }
+  
+  .grid-container {
+  grid-template-columns: repeat(auto-fit, 150px);
+  padding: 0 7%;
+}
+
+.card img {
+  width: 80px;
+  height: 100px;
+}
+
+p{
+  display: none;
+}
 }
 
 @media (max-width: 770px) {
@@ -308,4 +373,7 @@ button img{
   .slider-wrapper {
   height: 180px;
   }
+  
+    .grid-container {
+  grid-template-columns: repeat(auto-fit, 130px);
 }
