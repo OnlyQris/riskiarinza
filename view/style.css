@@ -9,7 +9,7 @@
   --primary-color: #3a435d;
   --border: rgb(75, 82, 92)
   --accent-color: #0071ff;
-  --drop-shadow: rgba(0, 0, 0, 0.5)
+  --drop-shadow: rgba(0, 0, 0, 0.3)
 }
 
 .darkmode {
@@ -96,7 +96,7 @@ body {
   font-weight: bold;
   margin-left: 2.5rem;
   padding: 20px 5px;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(6px 5px 2px rgba(0, 0, 0, 0.2));
 }
 
 .navbar a:hover {
@@ -322,11 +322,14 @@ button img{
 }
 
 .card img {
+  position: relative;
   width: 130px;
   height: 170px;
   filter: brightness(1);
   transition: filter 0.3s ease;
-  border-radius: 4px;
+  border-radius: 7px;
+  left: 68px;
+  float: none;
 }
 
 /* Hover effect */
@@ -405,24 +408,14 @@ p {
   padding: 0 7%;
 }
 
-.card {
-  text-align: justify;
-  justify-items: normal;
+  .grid-container-aplikasi {
+  grid-template-columns: repeat(auto-fit, 275px);
+  padding: 30px 0;
+  margin: 5rem 10%;
 }
 
 .card img {
-  width: 80px;
-  height: 100px;
-  float: left;
-}
-
-p{
-  display: none;
-}
-  .grid-container-aplikasi {
-  grid-template-columns: repeat(auto-fit, 400px);
-  padding: 30px 0;
-  margin: 5rem 10%;
+  left: 50px;
 }
 }
 
@@ -472,6 +465,10 @@ p{
   .slider-wrapper {
   height: 180px;
   }
+  
+  .grid-container-aplikasi {
+  grid-template-columns: repeat(auto-fit, 400px);
+}
   
     .grid-container {
   grid-template-columns: repeat(auto-fit, 120px);
@@ -532,5 +529,34 @@ p{
   transform: translate(-50%, -50%) scale(1.2);
   font-size: 0.9rem;
   opacity: 1;
+}
+
+.card {
+  text-align: justify;
+  justify-items: normal;
+}
+
+.card img {
+  width: 80px;
+  height: 100px;
+  float: left;
+  top: 0;
+  left: 0;
+}
+
+.card a h2 {
+  position: relative;
+  top: 13px;
+  left: 20px;
+  font-size: 1.2rem;
+}
+
+.card a p {
+  position: relative;
+  top: 18px;
+  left: 20px;
+  font-size: 0.7rem;
+  padding: 0 20px 0 0;
+}
 }
 /*End Responsive*/
