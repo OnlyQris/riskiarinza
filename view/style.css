@@ -546,16 +546,16 @@ p {
 
 .card a h2 {
   position: relative;
-  top: 13px;
+  top: 11px;
   left: 20px;
   font-size: 1.2rem;
 }
 
 .card a p {
   position: relative;
-  top: 18px;
+  top: 13px;
   left: 20px;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   padding: 0 20px 0 0;
 }
 }
