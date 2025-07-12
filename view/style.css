@@ -320,7 +320,6 @@ button img{
 
 .card {
   padding: 0.5rem 1rem;
-  border: 1px solid var(--border);
   border-radius: 10px;
   background-color: var(--color);
   text-align: center;
@@ -392,6 +391,7 @@ p {
   background-image: var(--footerdekstop);
   background-size: cover;
   color: var(--text-logo);
+  filter: drop-shadow(0 -2px 5px rgba(0, 0, 0, 0.2));
 }
 
 .footer-basic ul {
