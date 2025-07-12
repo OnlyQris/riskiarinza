@@ -4,23 +4,29 @@
   --bg: #f7f7f7;
   --color: #ff9900;
   --color-hover: #0056b3;
-  --text-color: #000;
+  --text-color: #fff;
   --text-logo: #fff;
   --primary-color: #3a435d;
-  --border: rgb(75, 82, 92)
+  --border: rgb(75, 82, 92);
   --accent-color: #0071ff;
-  --drop-shadow: rgba(0, 0, 0, 0.3)
+  --drop-shadow: rgba(0, 0, 0, 0.3);
+  --footerdekstop: url("footerdekstop1.png");
+  --footertab: url("footertab1.png");
+  --footermobile: url("footermobile1.png");
 }
 
 .darkmode {
   --bg: #1e1e1e;
   --color: #0056b3;
   --color-hover: #ff9900;
-  --text-color: #fff;
+  --text-color: #000;
   --primary-color: #3a435d;
-  --border: rgb(75, 82, 92)
+  --border: rgb(75, 82, 92);
   --accent-color: #0071ff;
-  --drop-shadow: rgba(255, 255, 255, 0.2)
+  --drop-shadow: rgba(255, 255, 255, 0.2);
+  --footerdekstop: url("footerdekstop2.png");
+  --footertab: url("footertab2.png");
+  --footermobile: url("footermobile2.png");
 }
 /*End Color Mode*/
 
@@ -40,7 +46,7 @@ a{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: Exo, sans-serif;
 }
 
 body {
@@ -96,7 +102,7 @@ body {
   font-weight: bold;
   margin-left: 2.5rem;
   padding: 20px 5px;
-  filter: drop-shadow(6px 5px 2px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(4px 3px 5px rgba(0, 0, 0, 0.2));
 }
 
 .navbar a:hover {
@@ -192,8 +198,8 @@ button img{
 
 /*Slider*/
 .slider {
-  padding: 30px 0;
-  margin: 5rem 15%;
+  padding: 30px 0 5px;
+  margin: 5rem 15% 3rem;
 }
 
 .slider-wrapper {
@@ -253,6 +259,7 @@ button img{
   gap: 30px;
   justify-content: center;
   padding: 0 10%;
+  margin-bottom: 50px;
 }
 
 .card-home {
@@ -366,6 +373,7 @@ button img{
   justify-content: center;
   padding: 30px 0;
   margin: 5rem 10%;
+  margin-bottom: 50px;
 }
 
 h2 {
@@ -379,6 +387,76 @@ p {
 /*End Content Web*/
 
 /*Footer*/
+.footer-basic {
+  padding: 110px 0;
+  background-image: var(--footerdekstop);
+  background-size: cover;
+  color: var(--text-logo);
+}
+
+.footer-basic ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Agar responsif di layar kecil */
+  padding: 0;
+  list-style: none;
+  font-size: 19px;
+  margin-bottom: 20px;
+  gap: 35px; /* Jarak antar item */
+}
+
+
+.footer-basic li {
+  padding:0;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid var(--text-logo);
+  margin:0 8px 5px 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a i{
+  font-size: 25px;
+  margin-top: 7px;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:35px;
+  text-align:center;
+  font-size:17px;
+  color: var(--text-logo);
+  margin-bottom: 0;
+}
 /*End Footer*/
 
 /*Responsive*/
@@ -396,7 +474,7 @@ p {
   }
   
   .slider {
-  margin: 6rem 10%;
+  margin: 6rem 10% 3rem;
   }
 
   .slider-wrapper {
@@ -412,10 +490,19 @@ p {
   grid-template-columns: repeat(auto-fit, 275px);
   padding: 30px 0;
   margin: 5rem 10%;
+  margin-bottom: 45px;
 }
 
 .card img {
   left: 50px;
+}
+
+.footer-basic {
+  background-image: var(--footertab);
+}
+
+.footer-basic .social {
+  margin-top: 10px;
 }
 }
 
@@ -459,7 +546,7 @@ p {
   }
 
   .slider {
-  margin: 5rem 7%;
+  margin: 5rem 7% 2.5rem;
   }
 
   .slider-wrapper {
@@ -468,6 +555,7 @@ p {
   
   .grid-container-aplikasi {
   grid-template-columns: repeat(auto-fit, 400px);
+  margin-bottom: 35px;
 }
   
     .grid-container {
@@ -557,6 +645,24 @@ p {
   left: 20px;
   font-size: 0.6rem;
   padding: 0 20px 0 0;
+}
+
+.footer-basic {
+  background-image: var(--footermobile);
+  padding: 50px 0;
+}
+
+.footer-basic .social {
+  margin-top: 0;
+}
+
+.footer-basic ul {
+  font-size: 18px;
+  gap: 15px; /* Jarak antar item */
+}
+
+.footer-basic .copyright {
+  font-size:13px;
 }
 }
 /*End Responsive*/

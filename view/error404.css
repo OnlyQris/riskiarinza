@@ -21,7 +21,7 @@
   }
 
   body {
-	background-image: url("potret.jpg");
+	background-image: url("landscape.jpg");
   background-size: cover;
 	color: #fff;
 	font-family: sans-serif;
@@ -95,6 +95,16 @@
     }
     60% {
       transform: translateY(-5px);
+    }
+  }
+  
+  @media (max-width: 900px) {
+    body {
+  	background-image: url("potret.jpg");
+    }
+    
+    *, html, body {
+    overflow-y: hidden;
     }
   }
 
