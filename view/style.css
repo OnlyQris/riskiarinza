@@ -275,6 +275,7 @@ button img{
   height: 170px;
   position: relative;
   overflow: hidden;
+  filter: drop-shadow(0 2px 5px var(--drop-shadow));
 }
 
 .card-home img {
@@ -336,6 +337,7 @@ button img{
   border-radius: 7px;
   left: 68px;
   float: none;
+  margin-bottom: 10px;
 }
 
 /* Hover effect */
@@ -495,6 +497,7 @@ p {
 
 .card img {
   left: 50px;
+  margin-bottom: 0;
 }
 
 .footer-basic {
