@@ -199,14 +199,14 @@ button img{
 /*Slider*/
 .slider {
   padding: 30px 0 5px;
-  margin: 5rem 15% 3rem;
+  margin: 5rem 10% 3rem;
 }
 
 .slider-wrapper {
   position: relative;
   overflow: hidden;
   border-radius: 20px;
-  height: 350px;
+  height: 200px;
   width: 100%;
   filter: drop-shadow(0 2px 4px var(--drop-shadow));
 }
@@ -389,7 +389,7 @@ p {
 
 /*Footer*/
 .footer-basic {
-  padding: 110px 0;
+  padding: 60px 0;
   background-image: var(--footerdekstop);
   background-size: cover;
   color: var(--text-logo);
@@ -668,4 +668,5 @@ p {
   font-size:13px;
 }
 }
+
 /*End Responsive*/
