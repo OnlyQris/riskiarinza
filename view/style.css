@@ -369,11 +369,10 @@ button img{
 /*Card Aplikasi*/
 .grid-container-aplikasi {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-columns: repeat(auto-fit, 320px);
   gap: 30px;
   justify-content: center;
-  padding: 30px 0;
-  margin: 8rem 5%;
+  margin: 9rem 5%;
   margin-bottom: 50px;
 }
 
@@ -383,6 +382,7 @@ h2 {
 
 p {
   color: var(--text-logo);
+  margin-top: 0.5rem;
 }
 /*End Card Aplikasi*/
 /*End Content Web*/
@@ -670,4 +670,5 @@ p {
 }
 
 /*End Responsive*/
+
 
