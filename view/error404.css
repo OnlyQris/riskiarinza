@@ -22,9 +22,10 @@
 
   body {
 	background-image: url("landscape.jpg");
-  background-size: cover;
+ 	 background-size: cover;
 	color: #fff;
 	font-family: sans-serif;
+	overflow: hidden;
 }
 
   .container {
