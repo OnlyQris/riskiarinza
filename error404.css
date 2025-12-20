@@ -22,7 +22,7 @@
 
   body {
 	background-image: url("landscape.jpg");
-  	background-size: cover;
+ 	 background-size: cover;
 	color: #fff;
 	font-family: sans-serif;
 	overflow: hidden;
@@ -98,19 +98,12 @@
       transform: translateY(-5px);
     }
   }
-  
-  @media (max-width: 900px) {
-    body {
+
+  @media (max-width: 530px) {
+	body {
   	background-image: url("potret.jpg");
     }
-    
-    *, html, body {
-    overflow-y: hidden;
-    }
-  }
-
-  @media (max-width: 768px) {
-    h1 {
+	h1 {
       font-size: 4em;
     }
     p {
@@ -118,7 +111,7 @@
     }
   }
 
-  @media (max-width: 576px) {
+  @media (max-width: 200px) {
     h1 {
       font-size: 3em;
     }
