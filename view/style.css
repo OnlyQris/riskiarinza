@@ -91,6 +91,24 @@ body {
 /*End Logo Text*/
 
 /*Navbar Text Menu*/
+.navbarr {
+  position: absolute;
+  right: 15%;
+  filter: drop-shadow(0 2px 4px var(--drop-shadow));
+}
+
+.navbarr a {
+  font-size: 1.15rem;
+  font-weight: bold;
+  margin-left: 2.5rem;
+  padding: 20px 5px;
+  filter: drop-shadow(4px 3px 5px rgba(0, 0, 0, 0.2));
+}
+
+.navbarr a:hover {
+  color: var(--color-hover);
+}
+
 .navbar {
   position: absolute;
   right: 15%;
@@ -516,6 +534,34 @@ p {
   #hamburger {
     opacity: 1;
   }
+
+    .navbarr{
+    right: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: var(--color-hover);
+    backdrop-filter: blur(50px);
+    overflow: hidden;
+    transition: .3s ease;
+  }
+  
+  #check:checked~.navbarr{
+    height: 16.7rem;
+  }
+  
+  .navbarr a {
+    display: block;
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .navbarr a:hover {
+    color: var(--color);
+  }
   
   .navbar{
     right: 0;
@@ -673,6 +719,7 @@ p {
 }
 
 /*End Responsive*/
+
 
 
 
