@@ -98,19 +98,12 @@
       transform: translateY(-5px);
     }
   }
-  
-  @media (max-width: 900px) {
-    body {
-  	background-image: url("potret.jpg");
-    }
-    
-    *, html, body {
-    overflow-y: hidden;
-    }
-  }
 
   @media (max-width: 768px) {
-    h1 {
+	body {
+  	background-image: url("potret.jpg");
+    }
+	h1 {
       font-size: 4em;
     }
     p {
