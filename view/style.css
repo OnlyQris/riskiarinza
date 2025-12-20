@@ -418,7 +418,7 @@ p {
   opacity:0.8;
 }
 
-.footer-basic:hover {
+.footer-basic ul:hover {
   opacity:1;
   color: var(--color-hover);
 }
@@ -671,6 +671,7 @@ p {
 }
 
 /*End Responsive*/
+
 
 
 
