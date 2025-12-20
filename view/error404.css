@@ -99,7 +99,7 @@
     }
   }
 
-  @media (max-width: 530px) {
+  @media (max-width: 900px) {
 	body {
   	background-image: url("potret.jpg");
     }
