@@ -418,9 +418,9 @@ p {
   opacity:0.8;
 }
 
-.footer-basic ul:hover {
+.footer-basic ul li a:hover {
   opacity:1;
-  color: var(--color-hover);
+  color: #1e1e1e;
 }
 
 .footer-basic .social {
@@ -451,6 +451,7 @@ p {
 
 .footer-basic .social > a:hover {
   opacity:0.9;
+  color: #1e1e1e;
 }
 
 .footer-basic .copyright {
@@ -671,6 +672,7 @@ p {
 }
 
 /*End Responsive*/
+
 
 
 
