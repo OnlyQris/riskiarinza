@@ -93,7 +93,7 @@ body {
 /*Navbar Text Menu*/
 .navbar {
   position: absolute;
-  right: 16%;
+  right: 15%;
   filter: drop-shadow(0 2px 4px var(--drop-shadow));
 }
 
@@ -420,6 +420,7 @@ p {
 
 .footer-basic ul a:hover {
   opacity:1;
+  color: var(--color-hover);
 }
 
 .footer-basic .social {
@@ -670,6 +671,7 @@ p {
 }
 
 /*End Responsive*/
+
 
 
 
