@@ -99,7 +99,7 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 530px) {
 	body {
   	background-image: url("potret.jpg");
     }
@@ -111,7 +111,7 @@
     }
   }
 
-  @media (max-width: 576px) {
+  @media (max-width: 529px) {
     h1 {
       font-size: 3em;
     }
