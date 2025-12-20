@@ -449,9 +449,10 @@ p {
   margin-top: 7px;
 }
 
-.footer-basic .social a:hover {
+.footer-basic .social > a:hover {
   opacity:0.9;
   color: #1e1e1e;
+  border:1px solid #1e1e1e;
 }
 
 .footer-basic .copyright {
@@ -672,6 +673,7 @@ p {
 }
 
 /*End Responsive*/
+
 
 
 
